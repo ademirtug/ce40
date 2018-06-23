@@ -437,7 +437,7 @@ DataTable CEDataReader::GetSchemaTable()
 	HandleColumns(table, pColDesc, nColumns);
 	HandleConstraints(table, pConstraints, nConstraints);
 	
-	//COPY-PASTE
+
 	DBCOLUMNDESC* pColCur;
 	unsigned long i;
 	for(pColCur = pColDesc, i = 0; i < nColumns; ++i, ++pColCur)
@@ -473,7 +473,7 @@ DataTable CEDataReader::GetSchemaTable()
 	CoTaskMemFree(pStrings);
 
 	spTableCreation.Release();
-	//COPY-PASTE
+
 
 	return table;
 }
